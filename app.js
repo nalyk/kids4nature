@@ -60,25 +60,23 @@ counters.forEach(el=>io2.observe(el));
   const imgWrap = document.querySelector('.hero__media img');
   if(!imgWrap || !hero) return;
 
-  let scrollY = 0;
-  let mouseX = 0;
-  let mouseY = 0;
+  let y = 0;
+  let x = 0;
 
   window.addEventListener('scroll', () => {
-    scrollY = window.scrollY * 0.4;
+    y = window.scrollY * 0.4;
     updateTransform();
   });
 
   hero.addEventListener('mousemove', (e) => {
     const rect = hero.getBoundingClientRect();
-    const percentX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
-    const percentY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
-    mouseX = percentX * -10; // Adjust the multiplier for more/less effect
-    mouseY = percentY * -10; // Adjust the multiplier for more/less effect
+    const mouseX = e.clientX - rect.left;
+    const percentX = (mouseX / rect.width - 0.5) * 2;
+    x = percentX * -10; // Adjust the multiplier for more/less effect
     updateTransform();
   });
 
   function updateTransform() {
-    imgWrap.style.transform = `translate3d(${mouseX}px, ${scrollY + mouseY}px, 0)`;
+    imgWrap.style.transform = `translate3d(${x}px, ${y}px, 0)`;
   }
 })();
