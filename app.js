@@ -56,29 +56,10 @@ counters.forEach(el=>io2.observe(el));
 
 // Light parallax on hero image
 (function(){
-  const hero = document.querySelector('.hero');
   const imgWrap = document.querySelector('.hero__media img');
-  if(!imgWrap || !hero) return;
-
-  let scrollY = 0;
-  let mouseX = 0;
-  let mouseY = 0;
-
-  window.addEventListener('scroll', () => {
-    scrollY = window.scrollY * 0.4;
-    updateTransform();
+  if(!imgWrap) return;
+  window.addEventListener('scroll', ()=>{
+    const y = window.scrollY * 0.4;
+    imgWrap.style.transform = `translate3d(0, ${y}px, 0)`;
   });
-
-  hero.addEventListener('mousemove', (e) => {
-    const rect = hero.getBoundingClientRect();
-    const percentX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
-    const percentY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
-    mouseX = percentX * -10; // Adjust the multiplier for more/less effect
-    mouseY = percentY * -10; // Adjust the multiplier for more/less effect
-    updateTransform();
-  });
-
-  function updateTransform() {
-    imgWrap.style.transform = `translate3d(${mouseX}px, ${scrollY + mouseY}px, 0)`;
-  }
 })();
