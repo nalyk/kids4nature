@@ -59,7 +59,7 @@ counters.forEach(el=>io2.observe(el));
   const imgWrap = document.querySelector('.hero__media img');
   if(!imgWrap) return;
   window.addEventListener('scroll', ()=>{
-    const y = window.scrollY * 0.2;
+    const y = window.scrollY * 0.4;
     imgWrap.style.transform = `translate3d(0, ${y}px, 0)`;
   });
 })();
