@@ -165,7 +165,7 @@ label{opacity:.9}
 
 @media (max-width: 980px) {
   .hero__content {
-    padding: 8vh 0 10vh;
+    padding: 8vh 24px 10vh;
   }
 
   .title {
@@ -174,11 +174,14 @@ label{opacity:.9}
 
   .hero__cta {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 1rem;
   }
 
   .badges {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
 }
