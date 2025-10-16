@@ -179,9 +179,6 @@ label{opacity:.9}
   }
 
   .badges {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    display: none;
   }
 }
