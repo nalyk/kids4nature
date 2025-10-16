@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Păduri Împreună | Plantăm un viitor sănătos</title>
+  <meta name="description" content="Mișcare pentru copii, școli și comunități care plantează păduri native pentru generațiile viitoare. 100% voluntariat, educație și impact real." />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#acasa" class="logo" aria-label="Păduri Împreună">🌱 Păduri Împreună</a>
+      <input id="nav-toggle" class="nav__toggle" type="checkbox" aria-label="Deschide meniul" />
+      <label for="nav-toggle" class="nav__burger" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="nav__menu" aria-label="Navigație principală">
+        <a href="#misiune">Misiune</a>
+        <a href="#programe">Programe</a>
+        <a href="#impact">Impact</a>
+        <a href="#comunitate">Comunitate</a>
+        <a href="#alatura">Alătură‑te</a>
+        <a href="#contact">Contact</a>
+        <a href="#doneaza" class="btn btn--primary">Donează</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="acasa" class="hero">
+    <div class="hero__media parallax" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?q=80&w=1920&auto=format&fit=crop"
+        alt="Pădure luminată de soare"
+        loading="eager"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <h1 class="title">
+        Plantăm păduri împreună<br>
+        pentru un <span class="accent">viitor sănătos</span>
+      </h1>
+      <p class="lead">
+        Copiii, profesorii și vecinii se unesc să refacă ecosisteme native. Învățăm, plantăm, protejăm.
+      </p>
+      <div class="hero__cta">
+        <a href="#alatura" class="btn btn--primary">Implică‑te</a>
+        <a href="#misiune" class="btn btn--ghost">Află mai mult</a>
+      </div>
+      <ul class="badges" aria-label="Indicatori cheie">
+        <li><strong>100%</strong> specii native</li>
+        <li><strong>Zero</strong> pesticide</li>
+        <li><strong>Comunități</strong> pe termen lung</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MISIUNE -->
+  <section id="misiune" class="section">
+    <div class="container grid grid--2">
+      <div class="card glass reveal">
+        <h2>Imaginăm o lume în care viața înflorește</h2>
+        <p>
+          Lucrăm cu copii și mentori ca să reconectăm oamenii cu natura. Plantăm păduri din semințe locale,
+          educăm prin practică și creăm spații vii pentru generațiile următoare.
+        </p>
+        <div class="inline-actions">
+          <a href="#programe" class="btn btn--secondary">Vezi programele</a>
+          <a href="#doneaza" class="btn btn--ghost">Susține cu o donație</a>
+        </div>
+      </div>
+      <figure class="media reveal">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop" alt="Copii plantând puieți" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROGRAME -->
+  <section id="programe" class="section section--alt">
+    <div class="container">
+      <h2 class="center">Ce facem</h2>
+      <p class="center dim">Trei direcții clare. Un singur obiectiv: păduri sănătoase, aproape de oameni.</p>
+      <div class="grid grid--3">
+        <article class="feature glass reveal">
+          <div class="icon" aria-hidden="true">
+            <!-- leaf icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M5 3a1 1 0 0 0-1 1v6c0 5.523 4.477 10 10 10h4a1 1 0 0 0 1-1v-1C19 9.82 14.18 5 9 5H6a1 1 0 0 1-1-1V4a1 1 0 0 0-1-1Z"/></svg>
+          </div>
+          <h3>Plantare</h3>
+          <p>Creăm păduri‑mini din specii autohtone, după model natural. Fără erbicide. Fără compromisuri.</p>
+          <a href="#alatura" class="text-link">Participă la următoarea acțiune →</a>
+        </article>
+        <article class="feature glass reveal">
+          <div class="icon" aria-hidden="true">
+            <!-- book icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2V5Z"/><path d="M6 3v14a2 2 0 0 1 2-2h10"/></svg>
+          </div>
+          <h3>Cursuri</h3>
+          <p>Educație practică pentru copii și profesori: sol, semințe, biodiversitate, îngrijire pe termen lung.</p>
+          <a href="#contact" class="text-link">Programează un atelier în școala ta →</a>
+        </article>
+        <article class="feature glass reveal">
+          <div class="icon" aria-hidden="true">
+            <!-- hands/heart icon -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 21s-7-4.35-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.65-7 9-7 9Z"/></svg>
+          </div>
+          <h3>Suport comunitar</h3>
+          <p>Mentorat pentru echipe locale, kituri de semințe, ghiduri, calendar de lucru și micro‑granturi.</p>
+          <a href="#comunitate" class="text-link">Intră în rețea →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact" class="section">
+    <div class="container">
+      <h2 class="center">Cum se vede impactul</h2>
+      <div class="impact grid grid--4">
+        <div class="impact__item glass reveal">
+          <span class="impact__num" data-count="48000">0</span>
+          <span class="impact__label">copaci plantați</span>
+        </div>
+        <div class="impact__item glass reveal">
+          <span class="impact__num" data-count="126">0</span>
+          <span class="impact__label">școli implicate</span>
+        </div>
+        <div class="impact__item glass reveal">
+          <span class="impact__num" data-count="3100">0</span>
+          <span class="impact__label">voluntari activi</span>
+        </div>
+        <div class="impact__item glass reveal">
+          <span class="impact__num" data-count="42">0</span>
+          <span class="impact__label">specii autohtone</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIN SĂMÂNȚĂ -->
+  <section class="section section--alt">
+    <div class="container grid grid--2">
+      <figure class="media reveal">
+        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1600&auto=format&fit=crop" alt="Semințe în mâini" loading="lazy">
+      </figure>
+      <div class="card glass reveal">
+        <h2>De la sămânță la pădure</h2>
+        <p>Colectăm semințe din regiune, le creștem în pepiniere mici, apoi le mutăm în teren când solul e pregătit. Copiii urmăresc ciclul complet al vieții.</p>
+        <a href="#programe" class="btn btn--secondary">Vezi metodologia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMUNITATE -->
+  <section id="comunitate" class="section">
+    <div class="container grid grid--2">
+      <div class="card glass reveal">
+        <h2>Comunitatea noastră crește</h2>
+        <p>Facilităm o rețea deschisă de mentori, școli și ONG‑uri care schimbă resurse, date și rezultate. Evenimente lunare, ghiduri și call‑uri de lucru.</p>
+        <ul class="checklist">
+          <li>Grup de lucru lunar</li>
+          <li>Bibliotecă de resurse deschise</li>
+          <li>Micro‑granturi pentru acțiuni locale</li>
+        </ul>
+        <div class="inline-actions">
+          <a href="#alatura" class="btn btn--primary">Intră în rețea</a>
+          <a href="#contact" class="btn btn--ghost">Contact rapid</a>
+        </div>
+      </div>
+      <figure class="map glass reveal" aria-label="Harta proiectelor (reprezentare vizuală)">
+        <svg viewBox="0 0 600 360" role="img" aria-labelledby="mapTitle mapDesc">
+          <title id="mapTitle">Puncte de proiect</title>
+          <desc id="mapDesc">Harta stilizată cu puncte pentru locații</desc>
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#D9F99D"/>
+              <stop offset="100%" stop-color="#86EFAC"/>
+            </linearGradient>
+          </defs>
+          <rect width="600" height="360" fill="url(#g)" rx="18"></rect>
+          <g fill="#14532D" opacity="0.25">
+            <circle cx="120" cy="90" r="2"/><circle cx="160" cy="120" r="2"/><circle cx="220" cy="160" r="2"/>
+            <circle cx="300" cy="140" r="2"/><circle cx="360" cy="200" r="2"/><circle cx="420" cy="110" r="2"/>
+            <circle cx="500" cy="180" r="2"/><circle cx="540" cy="230" r="2"/>
+          </g>
+          <g fill="#16A34A">
+            <circle cx="180" cy="130" r="6"/><circle cx="320" cy="150" r="6"/><circle cx="410" cy="210" r="6"/><circle cx="520" cy="170" r="6"/>
+          </g>
+        </svg>
+        <figcaption>Peste 100 de proiecte în rețea.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ALĂTURĂ-TE -->
+  <section id="alatura" class="section section--alt">
+    <div class="container">
+      <h2 class="center">Hai să plantăm împreună</h2>
+      <div class="steps grid grid--4">
+        <div class="step reveal"><span class="step__nr">1</span><h3>Vino pe teren</h3><p>Participă la o acțiune de plantare în orașul tău.</p></div>
+        <div class="step reveal"><span class="step__nr">2</span><h3>Adoptă un copac</h3><p>Îngrijește un puiet timp de doi ani. Îți dăm ghidul complet.</p></div>
+        <div class="step reveal"><span class="step__nr">3</span><h3>Devino mentor</h3><p>Ajută o școală să își creeze propria pădure.</p></div>
+        <div class="step reveal"><span class="step__nr">4</span><h3>Sponsorizează</h3><p>Acoperă un rând de puieți sau unelte pentru o clasă.</p></div>
+      </div>
+      <div class="center mt-l">
+        <a href="#doneaza" class="btn btn--primary">Donează acum</a>
+        <a href="#contact" class="btn btn--ghost">Înscrie‑te voluntar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALE -->
+  <section class="section">
+    <div class="container">
+      <h2 class="center">Ce spun oamenii</h2>
+      <div class="slider glass" data-slider>
+        <blockquote class="slide">
+          <p>„Elevii mei au înțeles pentru prima dată cum arată răbdarea în natură.”</p>
+          <footer>— Prof. Andreea, Chișinău</footer>
+        </blockquote>
+        <blockquote class="slide">
+          <p>„Nu e doar plantare. E comunitate, joacă și învățare autentică.”</p>
+          <footer>— Mihai, voluntar</footer>
+        </blockquote>
+        <blockquote class="slide">
+          <p>„După 12 luni, colțul nostru de parc chiar respiră altfel.”</p>
+          <footer>— Irina, părinte</footer>
+        </blockquote>
+        <button class="slider__prev" aria-label="Anterior">‹</button>
+        <button class="slider__next" aria-label="Următor">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="center">În imagini</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1200&auto=format&fit=crop" alt="Copii în pădure" loading="lazy" class="reveal">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop" alt="Plantare de puieți" loading="lazy" class="reveal">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Frunze și lumină" loading="lazy" class="reveal">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Trunchiuri de copaci" loading="lazy" class="reveal">
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTENERI + NEWSLETTER -->
+  <section class="section">
+    <div class="container grid grid--2">
+      <div class="card glass reveal">
+        <h2>Parteneri</h2>
+        <p>Le mulțumim celor care transformă ideile în copaci reali.</p>
+        <ul class="logos" aria-label="Parteneri">
+          <li>🌿 Verde</li>
+          <li>🌳 Arbor</li>
+          <li>🪵 Silva</li>
+          <li>🌾 Natura</li>
+        </ul>
+      </div>
+      <form id="doneaza" class="card glass reveal" action="#" method="post">
+        <h2>Newsletter</h2>
+        <p>Primește noutăți și invitații la plantări.</p>
+        <div class="form">
+          <label for="name">Nume</label>
+          <input id="name" name="name" type="text" placeholder="Prenume și nume" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="adresa@exemplu.md" required>
+          <button class="btn btn--primary" type="submit">Mă abonez</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="footer">
+    <div class="container grid grid--3">
+      <div>
+        <h3>Contact</h3>
+        <p><strong>Email:</strong> salut@paduri-impreuna.md</p>
+        <p><strong>Telefon:</strong> +373 600 000 00</p>
+      </div>
+      <div>
+        <h3>Resurse</h3>
+        <ul class="list">
+          <li><a href="#programe">Metodologie</a></li>
+          <li><a href="#comunitate">Rețea comunitară</a></li>
+          <li><a href="#impact">Date de impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Urmărește</h3>
+        <ul class="list">
+          <li><a href="#" rel="noopener">Facebook</a></li>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footnote">
+      <p>© <span id="year"></span> Păduri Împreună. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+</body>
+</html>
